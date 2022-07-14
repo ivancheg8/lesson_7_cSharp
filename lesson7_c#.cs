@@ -99,11 +99,8 @@ void AverageInColumns(double[,] array)
     {
         sum = 0;
         for (int j = 0; j < array.GetLength(0); j++)
-        {
             sum += array[j, i];
-        }
-        double s = sum / array.GetLength(0);
-        Console.Write(s + "; ");
+        Console.Write((sum / array.GetLength(0)) + "; ");
     }
     return;
 }
