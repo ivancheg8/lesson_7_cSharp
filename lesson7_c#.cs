@@ -34,7 +34,7 @@ double[,] createRandom2dArrayDouble(int rows, int columns, int minValue, int max
             newArray[i, j] = new Random().Next(minValue, maxValue + 1) + new Random().NextDouble();
     return newArray;
 }
-
+/* 
 Console.Write("Введите количество строк: ");
 int m = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите количество столбцов: ");
@@ -42,7 +42,7 @@ int n = Convert.ToInt32(Console.ReadLine());
 double[,] myArray = createRandom2dArrayDouble(m, n, 1, 9);
 show2dArray(myArray);
 
-
+ */
 
 
 
@@ -64,7 +64,7 @@ double FindNumber(double[,] array, int row, int column)
     }
     return array[row - 1, column - 1];
 }
-
+/* 
 Console.Write("Введите количество строк: ");
 int m = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите количество столбцов: ");
@@ -78,7 +78,7 @@ Console.Write("Введите столбец: ");
 int d = Convert.ToInt32(Console.ReadLine());
 Console.Write(FindNumber(myArray, c, d));
 
-
+ */
 
 
 
@@ -102,7 +102,7 @@ void AverageInColumns(double[,] array)
         {
             sum += array[j, i];
         }
-        double s = sum / (array.GetLength(0));
+        double s = sum / array.GetLength(0);
         Console.Write(s + "; ");
     }
     return;
